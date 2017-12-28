@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Practicing If else</title>
+    <script>
+        window.onload=function () {
+          document.getElementById('dateBtn').addEventListener('click',showDate);
+        }
+        function showDate(e) {
+            var selectedZodiac=document.getElementById('zodiac').value;
+            switch (selectedZodiac){
+                case "aquarius" : alert("Date of your birth is between : January 20 - February 18");
+                break;
+                case "pisces" : alert("Date of your birth is between : February 19 - March 20");
+                break;
+                case "aries" : alert("Date of your birth is between : March 21 - April 19");
+                break;
+                case "taurus" : alert("Date of your birth is between : April 20 - May 20");
+                break;
+                case "gemini" : alert("Date of your birth is between : May 21 - June 20");
+                break;
+                case "cancer" : alert("Date of your birth is between : June 21 - July 22");
+                break;
+                case "leo" : alert("Date of your birth is between : July 23 - August 22");
+                break;
+                case "virgo" : alert("Date of your birth is between : August 23 - September 22");
+                break;
+                case "libra" : alert("Date of your birth is between : September 23 - October 22");
+                break;
+                case "scorpio" : alert("Date of your birth is between : October 23 - November 21");
+                break;
+                case "sagittarius" : alert("Date of your birth is between : November 22 - December 21");
+                break;
+                case "capricorn" : alert("Date of your birth is between : December 22 - January 19");
+                break;
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<select id="zodiac">Please select your Zodiac Sign
+<option value="aquarius">Aquarius</option>
+<option value="pisces">Pisces</option>
+<option value="aries">Aries</option>
+<option value="taurus">Taurus</option>
+<option value="gemini">Gemini</option>
+<option value="cancer">Cancer</option>
+<option value="leo">Leo</option>
+<option value="virgo">Virgo</option>
+<option value="libra">Libra</option>
+<option value="scorpio">Scorpio</option>
+<option value="sagittarius">Sagittarius</option>
+<option value="capricorn">Capricorn</option>
+</select>
+<button id="dateBtn">Show Date</button>
+</body>
+</html>
