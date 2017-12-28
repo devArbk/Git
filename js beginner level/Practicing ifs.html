@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conditional practicing</title>
+</head>
+<body>
+
+<div id="result"></div>
+<script>
+    window.onload=function () {
+//        simple if statement
+     var age=prompt("How old are You?");
+        if (age >=18){
+         document.getElementById('result').innerHTML='You could legally vote,Congratulations!!!';
+        }
+
+//         if statement with logical operators
+      var age2=prompt("How old are You?");
+      var citizenConfirm=confirm('Are you really a Moldavian citizen?');
+         if (age2>="18" && citizenConfirm==true){
+             document.getElementById('result').innerHTML+='You could legally vote with my second condition case,Congratulations!!!';
+
+         }
+
+    }
+</script>
+</body>
+</html>

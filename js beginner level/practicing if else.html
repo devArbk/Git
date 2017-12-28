@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Practicing If else</title>
+    <script>
+        window.onload=function () {
+            document.getElementById('btnOne').addEventListener('click',btnClicked);
+            document.getElementById('btnTwo').addEventListener('click',btnClicked);
+            document.getElementById('btnThree').addEventListener('click',btnClicked);
+            document.getElementById('btnFour').addEventListener('click',btnClicked);
+            document.getElementById('gradeButon').addEventListener('click', genGrade);
+            document.getElementById('gradeButon2').addEventListener('click', genGrade2);
+
+
+        }
+        function btnClicked(e) {
+            if(e.target.id == 'btnOne'){
+                alert("You pressed Fist Button")
+            }
+            else  if(e.target.id == 'btnTwo'){
+                alert("You pressed Second Button")
+            }
+            else  if(e.target.id == 'btnThree'){
+                alert("You pressed Third Button")
+            }
+            else
+                alert("You pressed Fourth Button")
+
+        }
+
+
+
+
+            function genGrade(e) {
+                var gotNumberGrade = document.getElementById('guyGrade').value;
+                if (gotNumberGrade == '1' || gotNumberGrade == 2) {
+                    alert("Your Grade is : Very Bad ")
+                } else if (gotNumberGrade == 3 || gotNumberGrade == 4) {
+                    alert("Your Grade is :  Bad ")
+                } else if (gotNumberGrade == 3|| gotNumberGrade == 4) {
+                    alert("Your Grade is : At least no 4  ")
+                } else if (gotNumberGrade == 6 || gotNumberGrade == 7) {
+                    alert("Your Grade is :  You could better ")
+                } else if (gotNumberGrade == 8 || gotNumberGrade == 9) {
+                    alert("Your Grade is :  Almost Genius ")
+                } else
+                 {alert("You can be proud of you!!!!");}
+            }
+        function genGrade2(e) {
+            var gotNumberGrade2 = document.getElementById('guyGrade2').value;
+            if(gotNumberGrade2>1 && gotNumberGrade2<11){
+
+                 if (gotNumberGrade2 == '1' || gotNumberGrade2 == 2) {
+                     alert("Your Grade is : Very Bad ")
+                 } else if (gotNumberGrade2 == 3 || gotNumberGrade2 == 4) {
+                     alert("Your Grade is :  Bad ")
+                 } else if (gotNumberGrade2 == 3|| gotNumberGrade2 == 4) {
+                     alert("Your Grade is : At least no 4  ")
+                 } else if (gotNumberGrade2 == 6 || gotNumberGrade2 == 7) {
+                     alert("Your Grade is :  You could better ")
+                 } else if (gotNumberGrade2 == 8 || gotNumberGrade2 == 9) {
+                     alert("Your Grade is :  Almost Genius ")
+                 } else
+                 {alert("You can be proud of you!!!!");}
+            } else {
+                alert("Your input does not corespunde to the requirements,you should input a grade between One and Ten")
+            }
+        }
+    </script>
+</head>
+<body>
+<p style="text-align: center">Case One</p>
+<p style="text-align: center">This example shows us with a alert message with information about which button was pressed</p>
+<div style="text-align: center" id="result">
+    <button id="btnOne">FIRST</button>
+    <button id="btnTwo">SECOND</button>
+    <button id="btnThree">THIRD</button>
+    <button id="btnFour">FOURTH</button>
+</div>
+<p style="text-align: center">Case Two</p>
+<p style="text-align: center">This example will categorize a School Grade such as: "Very Bad" , "Bad" , "At least no 4" , "You could better" , "Almost Genius" ,
+    "You can be proud of you"</p>
+<div style="text-align: center" >
+    <label for="guyGrade" >Please introduce your grade!</label>
+<input id="guyGrade" type="number" min="1" max="10">
+<button id="gradeButon">GENERATE RESULT</button>
+</div>
+<p style="text-align: center">Case Three</p>
+<p style="text-align: center">This example will also categorize a School Grade such as: "Very Bad" , "Bad" , "At least no 4" , "You could better" , "Almost Genius" ,
+    "You can be proud of you",but with no Html max atibute to the input tag,if value is greater than 10 will be alerted a message ! </p>
+<div style="text-align: center" >
+    <label for="guyGrade2" >Please introduce your grade!</label>
+    <input id="guyGrade2" type="number" min="1" >
+    <button id="gradeButon2">GENERATE RESULT</button>
+</div>
+
+</body>
+</html>
